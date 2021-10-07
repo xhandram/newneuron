@@ -1,7 +1,27 @@
 //section hero
 
 #section-hero {
-  padding-top: 3rem;
+  padding: 3rem 50px;
+  height: 100vh;
+  background-color: $dark-background;
+
+  #phone-numbers {
+    display: flex;
+    align-items: center;
+
+
+    & div {
+      padding: 0 10px;
+    }
+
+    & div:nth-of-type(2){
+      border-left: 1px solid $primary-color ;      
+    }
+
+    & .search {
+      align-self: flex-end;
+    }
+  }
 }
 
 .black-bg {

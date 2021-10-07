@@ -7848,12 +7848,18 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem; }
 
 body {
+  font-size: 16px;
+  color: #edeeef; }
+
+body {
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem; }
+  font-size: 16px; }
 
 .row {
-  max-width: 114rem;
-  margin: 0 auto; }
+  max-width: 192rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row::after {
@@ -7877,9 +7883,24 @@ body {
     width: calc( 2 * ((100% - 3 * (4em)) / 4) + 4em); }
   .row .col-3-of-4 {
     width: calc( 3 * ((100% - 3 * (4em)) / 4) + (4em * 2)); }
+  .row .col-flex-1 {
+    flex: 1; }
+  .row .col-flex-2 {
+    flex: 2; }
 
 #section-hero {
-  padding-top: 3rem; }
+  padding: 3rem 50px;
+  height: 100vh;
+  background-color: #040000; }
+  #section-hero #phone-numbers {
+    display: flex;
+    align-items: center; }
+    #section-hero #phone-numbers div {
+      padding: 0 10px; }
+    #section-hero #phone-numbers div:nth-of-type(2) {
+      border-left: 1px solid #eb5f22; }
+    #section-hero #phone-numbers .search {
+      align-self: flex-end; }
 
 .black-bg {
   background-color: #040000; }

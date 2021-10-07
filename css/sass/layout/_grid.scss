@@ -1,6 +1,8 @@
 .row {
-    max-width: 114rem;
+    max-width: 192rem;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
   
     &:not(:last-child) {
       margin-bottom: $gutter-vertical;
@@ -40,6 +42,12 @@
         3 * ((100% - 3 * (#{$gutter-horizontal})) / 4) +
           (#{$gutter-horizontal} * 2)
       );
+    }
+    .col-flex-1 {
+      flex:1;
+    }
+    .col-flex-2 {
+      flex:2;
     }
   }
   
