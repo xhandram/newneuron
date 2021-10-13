@@ -5,7 +5,7 @@ body {
   font-size: 0.8rem;
 }
 
-h1{
+h1 {
   font-size: 3rem;
 }
 
@@ -15,9 +15,20 @@ h2 {
 
 h3 {
   font-size: 1.8rem;
-  
 }
 
-p{
+p {
   margin-bottom: 1.5rem;
+}
+
+a {
+  color: $primary-color;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 2.5rem 0;
 }

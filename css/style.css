@@ -7851,32 +7851,34 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   text-transform: uppercase; }
 
 .destacar {
-  color: #eb5f22; }
+  color: #eb5f22 !important; }
 
 .decorative-line-1 {
-  font-size: .8rem; }
+  font-size: 0.8rem; }
   .decorative-line-1::after {
     content: " ";
     background-color: #eb5f22;
     width: 1px;
     height: 60px;
     display: block;
-    margin-top: .5rem; }
+    margin-top: 0.5rem; }
 
 .decorative-line-2 {
-  font-size: 1rem; }
+  font-size: 1rem;
+  letter-spacing: 0.2em; }
   .decorative-line-2::after {
     content: " ";
     background-color: #eb5f22;
     width: 1px;
     height: 180px;
     display: block;
-    margin-top: .5rem; }
+    margin-top: 0.5rem; }
 
 .decorative-line-3 {
   text-transform: uppercase;
   font-size: 1rem;
   position: relative;
+  letter-spacing: 0.2em;
   padding-left: 1rem; }
   .decorative-line-3::before {
     content: " ";
@@ -7907,6 +7909,16 @@ h3 {
 
 p {
   margin-bottom: 1.5rem; }
+
+a {
+  color: #eb5f22;
+  text-transform: uppercase;
+  letter-spacing: 0.2em; }
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 2.5rem 0; }
 
 .row {
   max-width: 192rem;
@@ -7940,6 +7952,9 @@ p {
     flex: 1; }
   .row .col-flex-2 {
     flex: 2; }
+
+.mt-8 {
+  margin-top: 8rem; }
 
 #nav {
   padding: 3rem 50px;
@@ -8046,11 +8061,22 @@ p {
     padding-left: 1rem; }
     .glider__robot__img {
       padding-bottom: 1rem;
-      padding-top: 1rem; }
+      padding-top: 1rem;
+      padding-left: 1rem; }
 
-.controler, .pagination {
+.controler,
+.pagination {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-left: 1rem; }
+
+.dots-button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 0;
+  padding: 0;
+  cursor: pointer; }
 
 body {
   background-color: #040000; }
@@ -8077,7 +8103,8 @@ body {
     width: 400px;
     margin-left: 5rem;
     margin-top: 3rem; }
-    #welcome-section .card-black p, #welcome-section .card-black h2 {
+    #welcome-section .card-black p,
+    #welcome-section .card-black h2 {
       margin-bottom: 3rem; }
 
 #services-section {
@@ -8149,10 +8176,36 @@ body {
 #robotica-section {
   padding-top: 8rem;
   padding-left: 30rem;
-  padding-right: 35rem;
+  padding-right: 30rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 5rem; }
+  padding-bottom: 15rem; }
   #robotica-section h2 {
     margin-bottom: 8rem; }
+
+#stories-section {
+  color: black;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/mountain-background.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 30rem;
+  padding-right: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 5rem; }
+  #stories-section #feature-story {
+    display: flex;
+    justify-content: center; }
+    #stories-section #feature-story__img {
+      width: 50%;
+      margin-top: -8rem;
+      color: white; }
+    #stories-section #feature-story__desc {
+      width: 50%;
+      padding-top: 5rem; }
+  #stories-section #stories {
+    margin-top: 8rem; }

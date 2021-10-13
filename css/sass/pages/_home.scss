@@ -1,4 +1,3 @@
-
 body {
   background-color: $dark-background;
 }
@@ -11,7 +10,6 @@ body {
   padding-left: 30rem;
   padding-right: 60rem;
   padding-top: 80px;
-  
 }
 //WELCOME SECTION
 #welcome-section {
@@ -19,7 +17,6 @@ body {
   padding-bottom: 5rem;
   align-items: center;
 
-  
   &__video {
     flex: 1;
     max-width: 40%;
@@ -31,12 +28,13 @@ body {
     margin-left: 5rem;
     margin-top: 3rem;
 
-    & p, h2 {
+    & p,
+    h2 {
       margin-bottom: 3rem;
     }
   }
-  
-//SERVICES SECTION  
+
+  //SERVICES SECTION
 }
 #services-section {
   padding-left: 30rem;
@@ -52,20 +50,24 @@ body {
 }
 
 //IMAGES SECTION
-#images-section{
+#images-section {
   height: 100vh;
   background-color: $light-background;
   color: $text-dark;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto;
-  grid-template-areas: 
-  "lgv m1 m2 m3"
-  "lgv lgh lgh m4";
+  grid-template-areas:
+    "lgv m1 m2 m3"
+    "lgv lgh lgh m4";
 }
-#lgv{
+#lgv {
   grid-area: lgv;
-  background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url("../img/neurons.jpg");
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../img/neurons.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,35 +77,35 @@ body {
   align-items: center;
   padding: 2rem;
 }
-#m1{
+#m1 {
   grid-area: m1;
   background-image: url("../img/2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#m2{
+#m2 {
   grid-area: m2;
   background-image: url("../img/3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#m3{
+#m3 {
   grid-area: m3;
   background-image: url("../img/4.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#lgh{
+#lgh {
   grid-area: lgh;
   background-image: url("../img/6.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#m4{
+#m4 {
   grid-area: m4;
   background-image: url("../img/5.png");
   background-position: top;
@@ -114,13 +116,52 @@ body {
 #robotica-section {
   padding-top: 8rem;
   padding-left: 30rem;
-  padding-right: 35rem;
+  padding-right: 30rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 5rem;
+  padding-bottom: 15rem;
 
   h2 {
     margin-bottom: 8rem;
+  }
+}
+
+//STORIES SECTION
+#stories-section {
+  color: black;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../img/mountain-background.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 30rem;
+  padding-right: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 5rem;
+
+  #feature-story {
+    display: flex;
+    justify-content: center;
+
+    &__img {
+      width: 50%;
+      margin-top: -8rem;
+      color: white;
+    }
+    &__desc {
+      width: 50%;
+      padding-top: 5rem;
+    }
+  }
+
+  #stories {
+    margin-top: 8rem;
   }
 }

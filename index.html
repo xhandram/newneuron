@@ -104,7 +104,7 @@
         <div id="lgv">
             <h3>Neurología</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni eos iusto quae beatae vitae aliquam incidunt nesciunt. </p>
-            <button class="solid-btn">Saber más</button>
+            <button class="solid-btn ">Saber más</button>
         </div>
         <div id="m1"></div>
         <div id="m2"></div>
@@ -126,10 +126,16 @@
                 </div>
                 <div class="glider__robot">
                     <div class="glider__robot__title decorative-line-3">Omego Plus</div>
-                    <div class="glider__robot__img"><img src="img/omego.png" alt="omego plus"></div>
+                    <div class="glider__robot__img" data-index="1"><img src="img/omego.png" alt="omego plus"></div>
                     <div class="controler"> 
-                        <p><span class="active-slide destacar">1</span>/<span class="total-slides">12</span><p>
-                        <div id="dots"></div>
+                        <p><span class="active-slide destacar">1</span>/<span class="total-slides">5</span><p>
+                        <div id="dots">
+                            <button class="dots-button" data-index="1"></button>
+                            <button class="dots-button" data-index="2"></button>
+                            <button class="dots-button" data-index="3"></button>
+                            <button class="dots-button" data-index="4"></button>
+                            <button class="dots-button" data-index="5"></button>
+                        </div>
                     </div>
                     <div class="pagination"> 
                         <p><button id="prev-slide" href="#" aria-label="Previous" class="text-btn  destacar" >&larr; Anterior</button></p>
@@ -142,8 +148,44 @@
             
         </div>
     </section>
+    <!-- STORIES SECTION-->
+    <section id="stories-section">
+        <div id="feature-story">
+            <div id="feature-story__img">
+                <p class="decorative-line-3">Historias de Superación</p>
+                <div class="pl-4"><img src="img/stories1.png"></div>
+            </div>
+            <div id="feature-story__desc" class="">
+                <h3>Ricardo Soler nos habla de cómo fue su recuperación en Neuron tras sufrir un Ictus</h3>
+                <p class="mt-5 has-text-grey is-size-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A tempora aperiam possimus nulla, iure sed quas minima laudantium repellat inventore aut iusto quod.</p>
+                
+                <a href="#">Leer más</a>            
+            </div>
+        </div>
+        <div id="stories" class="columns">
+            <div class="story column">
+                <img src="img/stories2.png" alt="">
+                <p class="title">Ricardo Soler nos habla de cómo fue su recuperación en Neuron tras sufrir un Ictus</p>
+                
+                <a href="#">Leer más</a>     
+            </div>
+            <div class="story column">
+                <img src="img/stories3.png" alt="">
+                <p class="title">Ricardo Soler nos habla de cómo fue su recuperación en Neuron tras sufrir un Ictus</p>
+                
+                <a href="#">Leer más</a>     
+            </div>
+            <div class="story column">
+                <img src="img/stories4.png" alt="">
+                <p class="title">Ricardo Soler nos habla de cómo fue su recuperación en Neuron tras sufrir un Ictus</p>
+               
+                <a href="#">Leer más</a>    
+            </div> 
+            </div>
+            <button class="line-btn mt-8 is-vcentered destacar">Más historias</button>
+        
+    </section>
 </body>
 
-<script src="js/glider.min.js"></script>
 <script src="js/script.js"></script>
 </html>

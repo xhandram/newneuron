@@ -1,55 +1,54 @@
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .destacar {
-    color: $primary-color;
+  color: $primary-color !important;
 }
 
-.decorative-line-1{
-    font-size: .8rem;
+.decorative-line-1 {
+  font-size: 0.8rem;
 
-    &::after{
-        content: " ";
-        background-color: $primary-color;
-        width: 1px;
-        height: 60px;
-        display: block;
-        margin-top: .5rem;
-    }
+  &::after {
+    content: " ";
+    background-color: $primary-color;
+    width: 1px;
+    height: 60px;
+    display: block;
+    margin-top: 0.5rem;
+  }
 }
 
-.decorative-line-2{
-    font-size: 1rem;
+.decorative-line-2 {
+  font-size: 1rem;
+  letter-spacing: 0.2em;
 
-    &::after{
-        content: " ";
-        background-color: $primary-color;
-        width: 1px;
-        height: 180px;
-        display: block;
-        margin-top: .5rem;
-    }
+  &::after {
+    content: " ";
+    background-color: $primary-color;
+    width: 1px;
+    height: 180px;
+    display: block;
+    margin-top: 0.5rem;
+  }
 }
 
-.decorative-line-3{
-    text-transform: uppercase;
-    font-size: 1rem;
-    position: relative;
-    padding-left: 1rem;
+.decorative-line-3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  position: relative;
+  letter-spacing: 0.2em;
+  padding-left: 1rem;
 
+  &::before {
+    content: " ";
+    background-color: $primary-color;
+    width: 1px;
+    height: 100px;
+    display: inline-block;
 
-    &::before{
-        content: " ";
-        background-color: $primary-color;
-        width: 1px;
-        height: 100px;
-        display: inline-block;
-        
-        position: absolute;
-        top: 0;
-        left: 0;
-        
-        
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
