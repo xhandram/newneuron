@@ -1,0 +1,27 @@
+.service {
+    width: 100%;
+    display: flex;
+
+
+    &__title {
+        display: flex;
+        flex: 1;
+        h3 {
+            padding-left: 2rem;
+        }
+    }
+
+    &__desc {
+        display: flex;
+        padding-left: 3rem;
+        flex: 1;
+
+        
+
+        img {
+            height: 50px;
+            padding: 0 2rem;
+        }
+    }
+
+}

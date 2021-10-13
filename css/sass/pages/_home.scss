@@ -1,29 +1,126 @@
-//section hero
 
-#section-hero {
-  padding: 3rem 50px;
-  height: 100vh;
+body {
   background-color: $dark-background;
+}
+//HERO SECTION
+#hero-section {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 30rem;
+  padding-right: 60rem;
+  padding-top: 80px;
+  
+}
+//WELCOME SECTION
+#welcome-section {
+  display: flex;
+  padding-bottom: 5rem;
+  align-items: center;
 
-  #phone-numbers {
-    display: flex;
-    align-items: center;
+  
+  &__video {
+    flex: 1;
+    max-width: 40%;
+    height: auto;
+    margin-top: -5rem;
+  }
+  & .card-black {
+    width: 400px;
+    margin-left: 5rem;
+    margin-top: 3rem;
 
-
-    & div {
-      padding: 0 10px;
+    & p, h2 {
+      margin-bottom: 3rem;
     }
+  }
+  
+//SERVICES SECTION  
+}
+#services-section {
+  padding-left: 30rem;
+  padding-right: 35rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 5rem;
 
-    & div:nth-of-type(2){
-      border-left: 1px solid $primary-color ;      
-    }
-
-    & .search {
-      align-self: flex-end;
-    }
+  h2 {
+    padding-bottom: 4rem;
   }
 }
 
-.black-bg {
-  background-color: $dark-background;
+//IMAGES SECTION
+#images-section{
+  height: 100vh;
+  background-color: $light-background;
+  color: $text-dark;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "lgv m1 m2 m3"
+  "lgv lgh lgh m4";
+}
+#lgv{
+  grid-area: lgv;
+  background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url("../img/neurons.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+#m1{
+  grid-area: m1;
+  background-image: url("../img/2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#m2{
+  grid-area: m2;
+  background-image: url("../img/3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#m3{
+  grid-area: m3;
+  background-image: url("../img/4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#lgh{
+  grid-area: lgh;
+  background-image: url("../img/6.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#m4{
+  grid-area: m4;
+  background-image: url("../img/5.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+//ROBOTICA SECTION
+#robotica-section {
+  padding-top: 8rem;
+  padding-left: 30rem;
+  padding-right: 35rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 5rem;
+
+  h2 {
+    margin-bottom: 8rem;
+  }
 }

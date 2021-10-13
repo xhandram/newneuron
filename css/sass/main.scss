@@ -1,7 +1,14 @@
 @import "../../node_modules/bulma/bulma.sass";
 @import "abstracts/variables";
+@import "abstracts/helpers";
 @import "abstracts/mixins";
 @import "base/base";
 @import "base/typography";
 @import "layout/grid";
+@import "layout/navbar";
+@import "layout/header";
+@import "components/card-black";
+@import "components/buttons";
+@import "components/service";
+@import "components/glider";
 @import "pages/home";

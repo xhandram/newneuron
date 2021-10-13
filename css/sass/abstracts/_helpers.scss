@@ -1,0 +1,55 @@
+.uppercase {
+    text-transform: uppercase;
+}
+
+.destacar {
+    color: $primary-color;
+}
+
+.decorative-line-1{
+    font-size: .8rem;
+
+    &::after{
+        content: " ";
+        background-color: $primary-color;
+        width: 1px;
+        height: 60px;
+        display: block;
+        margin-top: .5rem;
+    }
+}
+
+.decorative-line-2{
+    font-size: 1rem;
+
+    &::after{
+        content: " ";
+        background-color: $primary-color;
+        width: 1px;
+        height: 180px;
+        display: block;
+        margin-top: .5rem;
+    }
+}
+
+.decorative-line-3{
+    text-transform: uppercase;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 1rem;
+
+
+    &::before{
+        content: " ";
+        background-color: $primary-color;
+        width: 1px;
+        height: 100px;
+        display: inline-block;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        
+    }
+}

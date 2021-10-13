@@ -7847,13 +7847,66 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+.uppercase {
+  text-transform: uppercase; }
+
+.destacar {
+  color: #eb5f22; }
+
+.decorative-line-1 {
+  font-size: .8rem; }
+  .decorative-line-1::after {
+    content: " ";
+    background-color: #eb5f22;
+    width: 1px;
+    height: 60px;
+    display: block;
+    margin-top: .5rem; }
+
+.decorative-line-2 {
+  font-size: 1rem; }
+  .decorative-line-2::after {
+    content: " ";
+    background-color: #eb5f22;
+    width: 1px;
+    height: 180px;
+    display: block;
+    margin-top: .5rem; }
+
+.decorative-line-3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 1rem; }
+  .decorative-line-3::before {
+    content: " ";
+    background-color: #eb5f22;
+    width: 1px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
 body {
-  font-size: 16px;
+  font-size: 10px;
   color: #edeeef; }
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 16px; }
+  font-size: 0.8rem; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2.3rem; }
+
+h3 {
+  font-size: 1.8rem; }
+
+p {
+  margin-bottom: 1.5rem; }
 
 .row {
   max-width: 192rem;
@@ -7861,7 +7914,7 @@ body {
   display: flex;
   align-items: center; }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 1rem; }
   .row::after {
     content: "";
     clear: both;
@@ -7888,19 +7941,218 @@ body {
   .row .col-flex-2 {
     flex: 2; }
 
-#section-hero {
+#nav {
   padding: 3rem 50px;
   height: 100vh;
+  height: 60px;
   background-color: #040000; }
-  #section-hero #phone-numbers {
+  #nav__content {
+    position: relative;
+    width: 100%;
     display: flex;
-    align-items: center; }
-    #section-hero #phone-numbers div {
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px; }
+  #nav__phone-numbers {
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    font-size: .9rem; }
+    #nav__phone-numbers div {
       padding: 0 10px; }
-    #section-hero #phone-numbers div:nth-of-type(2) {
+    #nav__phone-numbers div:nth-of-type(2) {
       border-left: 1px solid #eb5f22; }
-    #section-hero #phone-numbers .search {
-      align-self: flex-end; }
+  #nav__menu-icon {
+    width: 55px;
+    height: auto;
+    vertical-align: middle;
+    padding-left: 1rem; }
 
-.black-bg {
+.logo {
+  position: absolute;
+  min-width: 220px;
+  top: 0px;
+  left: 0px; }
+
+.card-black {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.line-btn {
+  padding: 15px;
+  background: none;
+  text-transform: uppercase;
+  border: 2px #eb5f22 solid;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  color: #edeeef;
+  display: block;
+  width: fit-content;
+  letter-spacing: 0.2rem; }
+
+.solid-btn {
+  padding: 15px;
+  background: #eb5f22;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border: 0;
+  border-radius: 4px;
+  color: #edeeef;
+  display: block;
+  width: fit-content;
+  letter-spacing: 0.2rem; }
+
+.text-btn {
+  border: 0;
+  background: none;
+  color: #eb5f22;
+  cursor: pointer; }
+
+.service {
+  width: 100%;
+  display: flex; }
+  .service__title {
+    display: flex;
+    flex: 1; }
+    .service__title h3 {
+      padding-left: 2rem; }
+  .service__desc {
+    display: flex;
+    padding-left: 3rem;
+    flex: 1; }
+    .service__desc img {
+      height: 50px;
+      padding: 0 2rem; }
+
+.glider {
+  margin-top: 2rem; }
+  .glider__slide {
+    display: flex; }
+  .glider__desc {
+    padding-right: 4rem;
+    width: 50%; }
+    .glider__desc h3 {
+      color: #eb5f22;
+      margin-bottom: 2rem; }
+    .glider__desc p {
+      margin-bottom: 2rem; }
+  .glider__robot {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem; }
+    .glider__robot__img {
+      padding-bottom: 1rem;
+      padding-top: 1rem; }
+
+.controler, .pagination {
+  display: flex;
+  justify-content: space-between; }
+
+body {
   background-color: #040000; }
+
+#hero-section {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 30rem;
+  padding-right: 60rem;
+  padding-top: 80px; }
+
+#welcome-section {
+  display: flex;
+  padding-bottom: 5rem;
+  align-items: center; }
+  #welcome-section__video {
+    flex: 1;
+    max-width: 40%;
+    height: auto;
+    margin-top: -5rem; }
+  #welcome-section .card-black {
+    width: 400px;
+    margin-left: 5rem;
+    margin-top: 3rem; }
+    #welcome-section .card-black p, #welcome-section .card-black h2 {
+      margin-bottom: 3rem; }
+
+#services-section {
+  padding-left: 30rem;
+  padding-right: 35rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 5rem; }
+  #services-section h2 {
+    padding-bottom: 4rem; }
+
+#images-section {
+  height: 100vh;
+  background-color: #f7f7f7;
+  color: #000;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: "lgv m1 m2 m3" "lgv lgh lgh m4"; }
+
+#lgv {
+  grid-area: lgv;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/neurons.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; }
+
+#m1 {
+  grid-area: m1;
+  background-image: url("../img/2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#m2 {
+  grid-area: m2;
+  background-image: url("../img/3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#m3 {
+  grid-area: m3;
+  background-image: url("../img/4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#lgh {
+  grid-area: lgh;
+  background-image: url("../img/6.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#m4 {
+  grid-area: m4;
+  background-image: url("../img/5.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#robotica-section {
+  padding-top: 8rem;
+  padding-left: 30rem;
+  padding-right: 35rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 5rem; }
+  #robotica-section h2 {
+    margin-bottom: 8rem; }
