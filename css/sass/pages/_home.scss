@@ -178,6 +178,7 @@ body {
   padding-top: 8rem;
 
   .contact {
+    width: 100%;
     h2 {
       margin-bottom: 5rem;
     }
@@ -236,8 +237,13 @@ body {
       fill: grey;
     }
   }
-  .contact__info {
+  .contact__info, .contact__text {
     max-width: 30%;
     margin-right:10%;
+
   }
+  #form-subsection {
+    margin-top: 5rem;
+  }
+
 }
