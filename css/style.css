@@ -8280,3 +8280,7 @@ body {
     margin-right: 10%; }
   #contact-section #form-subsection {
     margin-top: 5rem; }
+
+/* COLABORADORES SECTION */
+#section-colaboradores .level img {
+  filter: grayscale(1); }
