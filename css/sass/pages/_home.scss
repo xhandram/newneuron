@@ -171,7 +171,6 @@ body {
 #contact-section {
   display: flex;
   padding-left: 30rem;
-  padding-right: 30rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -179,6 +178,7 @@ body {
   padding-top: 8rem;
 
   .contact {
+    width: 100%;
     h2 {
       margin-bottom: 5rem;
     }
@@ -195,8 +195,10 @@ body {
       padding-top: 0.8rem;
       justify-content: space-between;
       h3 {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         padding-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
       }
     }
     &__direccion {
@@ -214,6 +216,11 @@ body {
       max-height: 350px;
     }
 
+    &.active h3 {
+      color: $primary-color !important;
+      
+    }
+
     svg path {
       transition: all 0.5s ease;
       -webkit-transition: all 0.5s ease;
@@ -229,5 +236,21 @@ body {
     &.active .cls-1 {
       fill: grey;
     }
+  }
+  .contact__info, .contact__text {
+    max-width: 30%;
+    margin-right:10%;
+
+  }
+  #form-subsection {
+    margin-top: 5rem;
+  }
+
+}
+/* COLABORADORES SECTION */
+
+#section-colaboradores {
+  .level img {
+    filter: grayscale(1);
   }
 }
