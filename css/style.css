@@ -7990,6 +7990,21 @@ a {
   top: 0px;
   left: 0px; }
 
+footer {
+  background-color: #040000;
+  padding: 2rem 30rem; }
+  footer a {
+    color: #eb5f22;
+    text-decoration: none; }
+  footer a.nav-link {
+    color: #b6b6b6; }
+  footer .columns {
+    justify-content: space-between; }
+  footer .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
 .card-black {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 80px 40px;
@@ -8315,7 +8330,8 @@ input {
       color: white; }
     #blog-section #feature-post__desc {
       width: 50%;
-      padding-top: 5rem; }
+      padding-top: 5rem;
+      font-size: 0.8rem; }
   #blog-section #posts {
     margin-top: -8rem;
     padding-left: 30rem;
