@@ -7891,7 +7891,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     left: 0; }
 
 body {
-  font-size: 10px;
+  font-size: 12px;
   color: #edeeef; }
 
 body {
@@ -7958,7 +7958,6 @@ a {
 
 #nav {
   padding: 3rem 50px;
-  height: 100vh;
   height: 60px;
   background-color: #040000; }
   #nav__content {
@@ -7967,16 +7966,18 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 60px; }
+    height: 70px; }
   #nav__phone-numbers {
     display: flex;
     align-items: center;
     padding: 0 5rem;
-    font-size: .9rem; }
+    font-size: 0.9rem; }
     #nav__phone-numbers div {
       padding: 0 10px; }
     #nav__phone-numbers div:nth-of-type(2) {
       border-left: 1px solid #eb5f22; }
+  #nav__action-btn {
+    padding-right: 5rem; }
   #nav__menu-icon {
     width: 55px;
     height: auto;
@@ -8091,25 +8092,27 @@ a {
 input {
   border: 0;
   background-color: transparent;
-  border-bottom: 1px solid #b5b5b5;
+  border-bottom: 1px solid grey;
   min-width: 350px; }
 
 #hero-section {
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  padding-left: 30rem;
-  padding-right: 60rem;
+  margin-left: 23%;
   padding-top: 80px; }
+  #hero-section p {
+    max-width: 450px; }
 
 #welcome-section {
   display: flex;
   padding-bottom: 5rem;
+  padding-top: 5rem;
   align-items: center; }
   #welcome-section__video {
     flex: 1;
-    max-width: 40%;
+    max-width: 50%;
     height: auto;
     margin-top: -5rem; }
   #welcome-section .card-black {
@@ -8129,6 +8132,10 @@ input {
   padding-bottom: 5rem; }
   #services-section h2 {
     padding-bottom: 4rem; }
+  #services-section .service__icon {
+    width: 35px;
+    max-height: 35px;
+    margin: 0 2rem; }
 
 #images-section {
   height: 100vh;
@@ -8141,7 +8148,7 @@ input {
 
 #lgv {
   grid-area: lgv;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/neurons.jpg");
+  background-image: url("../img/neurons.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8174,10 +8181,15 @@ input {
 
 #lgh {
   grid-area: lgh;
-  background-image: url("../img/6.png");
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6)), url("../img/6.png"); }
 
 #m4 {
   grid-area: m4;
@@ -8282,3 +8294,29 @@ input {
 /* COLABORADORES SECTION */
 #section-colaboradores .level img {
   filter: grayscale(1); }
+
+/* POST SECTION */
+#blog-section {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 5rem;
+  background-color: white; }
+  #blog-section #feature-post {
+    display: flex;
+    padding: 13rem 30rem;
+    justify-content: center;
+    margin: 0;
+    background-color: black; }
+    #blog-section #feature-post__img {
+      width: 50%;
+      color: white; }
+    #blog-section #feature-post__desc {
+      width: 50%;
+      padding-top: 5rem; }
+  #blog-section #posts {
+    margin-top: -8rem;
+    padding-left: 30rem;
+    padding-right: 30rem; }

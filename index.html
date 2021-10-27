@@ -12,7 +12,7 @@
 
 <body class="has-background-black">
 <!-- NAVIGATION-->
-    <nav id="nav">
+    <nav id="nav" role="navigation" aria-label="main navigation">
         <div id="nav__content" class="row">      
             <img src="img/logo.png" alt="logo" class="logo">     
             <div id="nav__phone-numbers">                 
@@ -21,6 +21,7 @@
                 <div> (+34) 96 385 1922</div>
                   
             </div>
+            <div id="nav__action-btn"><a href="" class="btn solid-btn">Empieza Ahora</a></div>
             <div class="nav__menu">
                 Menu
                 <img id="nav__menu-icon" class="search" src="img/rombo.png" alt="menu icon">
@@ -35,6 +36,7 @@
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ad ducimus, explicabo veniam pariatur modi rem culpa et fuga asperiores deleniti in reprehenderit praesentium minima dicta magnam distinctio velit qui.</p>
             <p class="decorative-line-1 uppercase"> Scroll para explorar</p>
         </section>
+
         <!-- WELCOME SECTION-->  
         <section id="welcome-section" class="row">
         <video id="welcome-section__video" autoplay muted>
@@ -57,7 +59,7 @@
                         <h3 class="destacar"> Valoración <br/>Inicial</h3>
                     </div>
                     <div class="service__desc">
-                        <img src="img/icons/valoracion.png" alt="valoracion icon" >
+                        <object data="svg/Icono_01.svg" class="service__icon"> </object>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores <span class="destacar">temporibus accusantium</span>temporib  illo mollitia laudantium, pariatur quia harum non cupiditate sapiente sunt deserunt voluptates necessitatibus doloremque.</p>
                     </div>
                 </div>
@@ -68,7 +70,7 @@
                         <h3 class="destacar"> Terapia<br/>Intensiva</h3>
                     </div>
                     <div class="service__desc">
-                        <img src="img/icons/valoracion.png" alt="valoracion icon" >
+                        <object data="svg/icono_02.svg" class="service__icon"> </object>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores <span class="destacar">temporibus accusantium</span>temporib  illo mollitia laudantium, pariatur quia harum non cupiditate sapiente sunt deserunt voluptates necessitatibus doloremque.</p>
                     </div>
                 </div>
@@ -79,7 +81,7 @@
                         <h3 class="destacar"> Objetivos <br/>significativos</h3>
                     </div>
                     <div class="service__desc">
-                        <img src="img/icons/valoracion.png" alt="valoracion icon" >
+                        <object data="svg/icono_03.svg" class="service__icon"> </object>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores <span class="destacar">temporibus accusantium</span>temporib  illo mollitia laudantium, pariatur quia harum non cupiditate sapiente sunt deserunt voluptates necessitatibus doloremque.</p>
                     </div>
                 </div>
@@ -90,7 +92,7 @@
                         <h3 class="destacar"> Análisis <br/>de Resultados</h3>
                     </div>
                     <div class="service__desc">
-                        <img src="img/icons/valoracion.png" alt="valoracion icon" >
+                        <object data="svg/icono_04.svg" class="service__icon"> </object>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores <span class="destacar">temporibus accusantium</span>temporib  illo mollitia laudantium, pariatur quia harum non cupiditate sapiente sunt deserunt voluptates necessitatibus doloremque.</p>
                     </div>
                 </div>
@@ -101,15 +103,16 @@
     </div>
     <!-- IMAGES SECTION-->
     <section id="images-section">
-        <div id="lgv">
-            <h3>Neurología</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni eos iusto quae beatae vitae aliquam incidunt nesciunt. </p>
-            <button class="btn solid-btn ">Saber más</button>
+        <div id="lgv">       
         </div>
         <div id="m1"></div>
         <div id="m2"></div>
         <div id="m3"></div>
-        <div id="lgh"></div>
+        <div id="lgh">
+            <h3>Neurología</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Magni eos iusto quae beatae vitae aliquam incidunt nesciunt. </p>
+            <button class="btn solid-btn ">Saber más</button>
+        </div>
         <div id="m4"></div>    
     </section>
 
@@ -276,6 +279,49 @@
         </div>
 
     </div>
+</section>
+
+<!-- NUESTRO BLOG SECTION -->
+<section id="blog-section">
+    <div id="feature-post">
+        <div id="feature-post__img">
+            <p class="decorative-line-3">Historias de Superación</p>
+            <div class="pl-4"><img src="img/stories1.png"></div>
+        </div>
+        <div id="feature-post__desc" class="">
+            <h3 class="destacar">Ricardo Soler nos habla de cómo fue su recuperación en Neuron tras sufrir un Ictus</h3>
+            <p class="mt-5 has-text-grey is-size-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A tempora aperiam possimus nulla, iure sed quas minima laudantium repellat inventore aut iusto quod.</p>
+            
+            <a href="#">Leer más</a>            
+        </div>
+    </div>
+    <div id="posts">
+    <div id="posts-wrapper" class="columns">
+        <div class="post column">
+            <img src="img/stories2.png" alt="">
+            <p class="title">Ricardo Soler nos habla de cómo fue su recuperación en Neuron tras sufrir un Ictus</p>
+            <p class="mt-5 has-text-grey is-size-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A tempora aperiam possimus nulla, iure sed quas minima laudantium repellat inventore aut iusto quod.</p>
+            
+            <a href="#">Leer más</a>     
+        </div>
+        <div class="post column">
+            <img src="img/stories3.png" alt="">
+            <p class="title">Ricardo Soler nos habla de cómo fue su recuperación en Neuron tras sufrir un Ictus</p>
+            <p class="mt-5 has-text-grey is-size-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A tempora aperiam possimus nulla, iure sed quas minima laudantium repellat inventore aut iusto quod.</p>
+            
+            <a href="#">Leer más</a>     
+        </div>
+        <div class="post column">
+            <img src="img/stories4.png" alt="">
+            <p class="title">Ricardo Soler nos habla de cómo fue su recuperación en Neuron tras sufrir un Ictus</p>
+            <p class="mt-5 has-text-grey is-size-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A tempora aperiam possimus nulla, iure sed quas minima laudantium repellat inventore aut iusto quod.</p>
+           
+            <a href="#">Leer más</a>    
+        </div> 
+    </div>
+    </div>
+        <button class=" btn line-btn mt-8 is-vcentered destacar">Más historias</button>
+    
 </section>
 </body>
 
