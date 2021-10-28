@@ -7990,20 +7990,36 @@ a {
   left: 0px;
   width: 220px; }
 
-footer {
+#footer {
   background-color: #040000;
-  padding: 2rem 30rem; }
-  footer a {
+  padding: 5rem 0; }
+  #footer a {
     color: #eb5f22;
     text-decoration: none; }
-  footer a.nav-link {
-    color: #b6b6b6; }
-  footer .columns {
-    justify-content: space-between; }
-  footer .column {
+  #footer a.nav-link {
+    color: #b6b6b6;
+    line-height: 2.8em;
+    font-size: 0.9em;
+    font-weight: 300; }
+  #footer .columns {
+    justify-content: space-around; }
+  #footer .column {
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    flex-direction: column; }
+  #footer__logo-column {
+    justify-content: space-between; }
+    #footer__logo-column a {
+      text-transform: lowercase;
+      padding-bottom: 1.1em;
+      margin-top: 1.5em;
+      margin-bottom: 1em;
+      display: block; }
+    #footer__logo-column img {
+      max-width: 80%; }
+  #footer h4 {
+    font-weight: 400;
+    font-size: 1.1em;
+    padding-bottom: 1.1em; }
 
 .card-black {
   background-color: rgba(0, 0, 0, 0.6);
@@ -8307,29 +8323,39 @@ input {
   #section-colaboradores .level img {
     filter: grayscale(1); }
 
-/* POST SECTION */
-#blog-section {
-  color: black;
+/* BLOG FEATURES POST SECTION */
+#blog-feature-section {
+  color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding-bottom: 5rem;
-  background-color: white; }
-  #blog-section #feature-post {
+  padding: 5rem 1rem;
+  padding-bottom: 12rem;
+  background-color: black; }
+  #blog-feature-section #feature-post {
     display: flex;
     justify-content: center;
     margin: 0;
-    background-color: black;
-    width: 100%;
-    padding-top: 5em;
-    padding-bottom: 10em; }
-    #blog-section #feature-post__img {
+    background-color: black; }
+    #blog-feature-section #feature-post__img {
       width: 50%;
       color: white; }
-    #blog-section #feature-post__desc {
+    #blog-feature-section #feature-post__desc {
       width: 50%;
       padding-top: 5rem;
       font-size: 0.8rem; }
-  #blog-section #posts {
-    margin-top: -8rem; }
+
+/* BLOG POST SECTION */
+#blog-posts-section {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8rem; }
+
+#posts-wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  #posts-wrapper img {
+    margin-top: -6rem; }
