@@ -153,6 +153,8 @@
   padding-bottom: 5rem;
   padding-left: 5rem;
   padding-right: 5rem;
+  z-index: 100;
+  position: relative;
 
   #feature-story {
     display: flex;
@@ -183,6 +185,8 @@
   align-items: flex-start;
   padding-bottom: 5rem;
   padding-top: 8rem;
+  z-index: 100;
+  position: relative;
 
   .contact {
     width: 100%;
@@ -255,6 +259,8 @@
 /* COLABORADORES SECTION */
 
 #section-colaboradores {
+  z-index: 100;
+  position: relative;
   padding: 8rem 1rem;
   .level img {
     filter: grayscale(1);
@@ -263,6 +269,8 @@
 
 /* BLOG FEATURES POST SECTION */
 #blog-feature-section {
+  z-index: 100;
+  position: relative;
   color: white;
   display: flex;
   justify-content: center;
@@ -290,6 +298,8 @@
 }
 /* BLOG POST SECTION */
 #blog-posts-section {
+  z-index: 100;
+  position: relative;
   background-color: $light-background;
   display: flex;
   flex-direction: column;

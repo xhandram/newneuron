@@ -1,12 +1,9 @@
 .video-container {
-  height: 100vh;
-  overflow-y: scroll;
-
   section * {
     z-index: 100;
   }
   #v0 {
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 0;
     width: 100%;

@@ -6,6 +6,12 @@
   color: $primary-color !important;
 }
 
+// Bakcground colors
+
+.has-background-black {
+  background-color: $dark-background;
+}
+
 .decorative-line-1 {
   font-size: 0.8rem;
 

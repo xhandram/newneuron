@@ -4,3 +4,8 @@ body {
   color: $text-white;
   overflow: hidden;
 }
+
+section * {
+  z-index: 100;
+  position: relative;
+}
