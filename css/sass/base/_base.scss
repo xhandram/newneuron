@@ -1,5 +1,6 @@
 //This file you will create your base style inside of the project
 body {
-    font-size: $default-font-size;
-    color: $text-white;
-  }
+  font-size: $default-font-size;
+  color: $text-white;
+  overflow: hidden;
+}

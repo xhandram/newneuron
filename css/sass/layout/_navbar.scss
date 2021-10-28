@@ -2,7 +2,6 @@
 #nav {
   padding: 3rem 50px;
   height: 60px;
-  
 
   &__content {
     position: relative;
@@ -11,6 +10,7 @@
     justify-content: flex-end;
     align-items: center;
     height: 70px;
+    z-index: 100;
   }
 
   &__phone-numbers {
@@ -18,6 +18,10 @@
     align-items: center;
     padding: 0 5rem;
     font-size: 0.9rem;
+
+    img {
+      width: 16px;
+    }
 
     & div {
       padding: 0 10px;
