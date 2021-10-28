@@ -7958,8 +7958,7 @@ a {
 
 #nav {
   padding: 3rem 50px;
-  height: 60px;
-  background-color: #040000; }
+  height: 60px; }
   #nav__content {
     position: relative;
     width: 100%;
@@ -7988,7 +7987,8 @@ a {
   position: absolute;
   min-width: 220px;
   top: 0px;
-  left: 0px; }
+  left: 0px;
+  width: 220px; }
 
 footer {
   background-color: #040000;
@@ -8139,12 +8139,10 @@ input {
       margin-bottom: 3rem; }
 
 #services-section {
-  padding-left: 30rem;
-  padding-right: 35rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 5rem; }
+  padding: 5rem; }
   #services-section h2 {
     padding-bottom: 4rem; }
   #services-section .service__icon {
@@ -8215,8 +8213,6 @@ input {
 
 #robotica-section {
   padding-top: 8rem;
-  padding-left: 30rem;
-  padding-right: 30rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -8230,13 +8226,13 @@ input {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-left: 30rem;
-  padding-right: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem; }
   #stories-section #feature-story {
     display: flex;
     justify-content: center; }
@@ -8252,7 +8248,6 @@ input {
 
 #contact-section {
   display: flex;
-  padding-left: 30rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -8301,14 +8296,16 @@ input {
       fill: grey; }
   #contact-section .contact__info,
   #contact-section .contact__text {
-    max-width: 30%;
-    margin-right: 10%; }
+    max-width: 40%;
+    margin-right: 3%; }
   #contact-section #form-subsection {
     margin-top: 5rem; }
 
 /* COLABORADORES SECTION */
-#section-colaboradores .level img {
-  filter: grayscale(1); }
+#section-colaboradores {
+  padding: 8rem 1rem; }
+  #section-colaboradores .level img {
+    filter: grayscale(1); }
 
 /* POST SECTION */
 #blog-section {
@@ -8321,10 +8318,12 @@ input {
   background-color: white; }
   #blog-section #feature-post {
     display: flex;
-    padding: 13rem 30rem;
     justify-content: center;
     margin: 0;
-    background-color: black; }
+    background-color: black;
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 10em; }
     #blog-section #feature-post__img {
       width: 50%;
       color: white; }
@@ -8333,6 +8332,4 @@ input {
       padding-top: 5rem;
       font-size: 0.8rem; }
   #blog-section #posts {
-    margin-top: -8rem;
-    padding-left: 30rem;
-    padding-right: 30rem; }
+    margin-top: -8rem; }

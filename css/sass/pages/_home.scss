@@ -38,12 +38,10 @@
   //SERVICES SECTION
 }
 #services-section {
-  padding-left: 30rem;
-  padding-right: 35rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 5rem;
+  padding: 5rem;
 
   h2 {
     padding-bottom: 4rem;
@@ -127,8 +125,6 @@
 //ROBOTICA SECTION
 #robotica-section {
   padding-top: 8rem;
-  padding-left: 30rem;
-  padding-right: 30rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -150,13 +146,13 @@
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-left: 30rem;
-  padding-right: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 
   #feature-story {
     display: flex;
@@ -182,7 +178,6 @@
 
 #contact-section {
   display: flex;
-  padding-left: 30rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -250,8 +245,8 @@
   }
   .contact__info,
   .contact__text {
-    max-width: 30%;
-    margin-right: 10%;
+    max-width: 40%;
+    margin-right: 3%;
   }
   #form-subsection {
     margin-top: 5rem;
@@ -260,6 +255,7 @@
 /* COLABORADORES SECTION */
 
 #section-colaboradores {
+  padding: 8rem 1rem;
   .level img {
     filter: grayscale(1);
   }
@@ -277,10 +273,12 @@
 
   #feature-post {
     display: flex;
-    padding: 13rem 30rem;
     justify-content: center;
     margin: 0;
     background-color: black;
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 10em;
 
     &__img {
       width: 50%;
@@ -295,7 +293,6 @@
 
   #posts {
     margin-top: -8rem;
-    padding-left: 30rem;
-    padding-right: 30rem;
+
   }
 }
